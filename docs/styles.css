@@ -543,3 +543,12 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* Ensure 4 steps appear in one row on larger screens */
+@media (min-width: 900px) {
+    .steps {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1200px; /* allow room for 4 columns plus gaps */
+        gap: 1.5rem;
+    }
+}
